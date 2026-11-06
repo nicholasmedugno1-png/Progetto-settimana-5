@@ -8,17 +8,18 @@ const btnCloseModal = document.querySelector('#btnCloseModal');
 const myForm = document.querySelector('form');
 const messag = document.querySelector('#messaggio');
 const titleH2 = document.querySelectorAll('h2');
-
 btnDarkMode.addEventListener('click', (e) => {
     body.classList.toggle('darkMode')
     cardJobs.classList.toggle('cardDarkMode')
     titleH2.forEach((h2) => {
         h2.classList.toggle('titleDark');
     })
-
+    
     body.classList.contains('darkMode') 
-    ? btnDarkMode.innerHTML = '<i class="fa-regular fa-sun"></i>' 
-    : btnDarkMode.innerHTML = '<i class="fa-solid fa-moon"></i>'
+    ? btnDarkMode.innerHTML = '<i class="fa-regular fa-sun" style="color:white;"></i>' 
+    : btnDarkMode.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    
+
 })
     
 

@@ -23,6 +23,10 @@ main{
     background-color: #121212;
     color: #f0f0f0;
 }
+
+.darkModeIcon {
+    color: f0f0f0;
+}
 /* provato a metterlo ovunque funziona solo qui */
 section {
     scroll-margin-top: 80px; 
@@ -100,6 +104,7 @@ width: 100vw;
                 height: 40px;
                 border-radius: 50%;
                 border: 1px solid #eee;
+                background-color: inherit;
             }
 
             i {
