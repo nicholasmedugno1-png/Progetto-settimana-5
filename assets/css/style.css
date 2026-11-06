@@ -282,6 +282,7 @@ color: #f0f0f0;
         border-radius: 8px;
         padding: 20px 10px;
         margin-bottom: 15px;
+            i{color: hsl(150, 60%, 30%);}
      }
 
      .cardServices:hover{
