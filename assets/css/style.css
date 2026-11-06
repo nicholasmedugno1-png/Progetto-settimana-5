@@ -8,11 +8,12 @@ main,body{
     margin: 0;
     padding: 0;
 }
-    
+
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     background-color: #fafafa;
     color: #1a1a1a;
+    
 }
 main{
  width: 100%;
@@ -22,9 +23,16 @@ main{
     background-color: #121212;
     color: #f0f0f0;
 }
+/* provato a metterlo ovunque funziona solo qui */
+section {
+    scroll-margin-top: 80px; 
+}
 
 .darkModeCard{
     background-color: #1f1f1f;
+}
+.titleDark {
+    color:  hsl(150, 60%, 30%);
 }
 
 a{
@@ -35,6 +43,7 @@ a{
 .container {
     width: 80%;
     margin: 0 auto;
+    
 }
 button {
     border: none;
@@ -269,6 +278,11 @@ color: #f0f0f0;
         padding: 20px 10px;
         margin-bottom: 15px;
      }
+
+     .cardServices:hover{
+        transform: translateY(-5px);
+    box-shadow:  1px 1px 8px  hsla(0 , 0%, 0%, 0.4 );
+     }
      
       
      .topBar i{
@@ -302,6 +316,11 @@ color: #f0f0f0;
         margin-bottom: 15px;
         
      }
+
+     .cardTeam:hover{
+        transform: translateY(-5px);
+    box-shadow:  1px 1px 8px  hsla(0 , 0%, 0%, 0.4 );
+     }
 }
 
 .nameTeam {
@@ -314,12 +333,77 @@ color: #f0f0f0;
     border-radius: 50%;
 }
 
+.overlay.modalOpen {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5000;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 480px;
+
+      p{
+        font-size: 0.7em;
+     }
+      
+        .marginLabel {
+            display: flex;
+            flex-direction: column;  
+            margin-bottom: 15px;  
+        }
+
+        div:nth-child(5){
+            font-size: 0.7em;
+            margin-top: 10px;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #btnCloseModal {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: none;
+        border: none;
+        margin-top: 8px;
+        margin-right: 3px;
+        cursor: pointer;
+        }
+
+        .btnInvia {
+            padding: 10px 40px;
+            border-radius: 25px;
+            background-color:hsl(150, 60%, 30%);
+            color: #f0f0f0;
+            margin-top: 10px;
+        }
+    }
+
 
 @media screen and (min-width: 768px) {
      .containerPadreJobs{
         display: flex;
          flex-direction: row;
-        justify-content: start;
+        justify-content: center;
         align-content: center;
         flex-wrap: wrap;
         column-gap: 30px;

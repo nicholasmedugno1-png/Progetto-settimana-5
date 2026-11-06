@@ -16,9 +16,9 @@
             <h1><i class="fa-solid fa-seedling"></i> Bloom</h1>
             <nav>
                 <ul>
-                    <li><a href="">Servizi</a></li>
-                    <li><a href="">Lavori</a> </li>
-                    <li><a href="">Team</a></li>
+                    <li><a href="#sectionService">Servizi</a></li>
+                    <li><a href="#containerJobs">Lavori</a> </li>
+                    <li><a href="#sectionTeam">Team</a></li>
                     <li><a href="">Contatti</a></li>
                     <li><button id="darkMode"><i class="fa-solid fa-moon"></i></button></li>
                 </ul>
@@ -32,6 +32,63 @@
             <p>Siamo uno studio creativo. Identita' visiva, web e motion graphic per chi vuole farsi notare.</p>
             <button id="btnModal">Richiedi Preventivo</button>
         </div>
+        <div class="overlay">
+
+                    <div class="modal">
+
+                        <button id="btnCloseModal">❌</button>
+
+                        <form action="" method="get">
+
+                            <p>Racconta il tuo progetto. Ti rispondiamo entro 48 ore</p>
+                            <div class="CenterForm">
+
+
+                                <div class="marginLabel">
+                                    <label for="nameUser">Nome</label>
+                                    <input class="input" name="nameUser" type="text" id="nameUser"
+                                        placeholder="Inserisci il tuo nome" required>
+                                </div>
+
+
+                                <div class="marginLabel">
+                                    <label for="emailUser">Inserisci la tua email</label>
+                                    <input class="input" name="emailUser" type="email" id="emailUser"
+                                        placeholder="tu@esempio.it" required>
+                                </div>
+
+
+                                <div class="marginLabel">
+                                    <label for="SceltaMultipla">Motivo del contatto</label>
+                                    <select class="input" name="SceltaMultipla" id="SceltaMultipla">
+                                        <option value="" selected>scegli un servizio</option>
+                                        <option value="IV">Identita' visiva</option>
+                                        <option value="WD">Web design</option>
+                                        <option value="MG">Motion graphic</option>
+                                    </select>
+                                </div>
+
+                                <div class="marginLabel">
+                                    <label for="Messaggio">Messaggio</label>
+                                    <textarea class="input" name="Messaggio" id="Messaggio" rows="4"
+                                        placeholder="Scrivi qui il tuo messaggi..."></textarea>
+                                </div>
+                                
+
+                                <div class="marginLabel">
+                                    <input class="condizioni" id="Condizioni" type="checkbox" required>
+                                    <label class="condizioni" for="Condizioni">Accetto di essere ricontattato
+                                        all'indirizzo
+                                        indicato</label>
+                                </div>
+
+                                <button id="btnInvia" class="btnInvia" type="submit">Invia</button>
+                                
+                                <p id="messaggio"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
     </section>
     <main>
         <div class="container">
@@ -42,7 +99,7 @@
 
 
                 <div class="jobs">
-                    <h3>I nostri Lavori</h3>
+                    <h2>I nostri Lavori</h2>
                     <div class="containerPadreJobs">
 
 
@@ -294,7 +351,7 @@
                     </div>
             </section>
             <!-- SEZIONE SERVIZI -->
-            <section>
+            <section id="sectionService">
                 <div class="services">
                     <h2>I nostri servizi</h2>
                     <div class="sectionService">
@@ -338,9 +395,9 @@
                 </div>
             </section>
             <!-- SEZIONE TEAM -->
-            <section>
+            <section id="sectionTeam">
                 <div class="sectionTeam">
-                    <h2>I nostri servizi</h2>
+                    <h2>Il nostro Team</h2>
                     <div class="pageTeam">
                         
 
@@ -389,9 +446,9 @@
             <p>Studio di design fondato nel 2026</p>
         </div>
         <div>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-square-behance"></i></a>
+            <a href="javascript: void(0)"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript: void(0)"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="javascript: void(0)"><i class="fa-brands fa-square-behance"></i></a>
         </div>
         <div>
             <p>© 2026 bloom</p>
