@@ -8,6 +8,7 @@ const btnCloseModal = document.querySelector('#btnCloseModal');
 const myForm = document.querySelector('form');
 const messag = document.querySelector('#messaggio');
 const titleH2 = document.querySelectorAll('h2');
+const cardCarosel = document.querySelectorAll('.cardCarosel');
 btnDarkMode.addEventListener('click', (e) => {
     body.classList.toggle('darkMode')
     cardJobs.classList.toggle('cardDarkMode')
@@ -51,4 +52,12 @@ myForm.addEventListener('submit', (e) => {
     } ,2000)
         
     
+});
+
+
+cardCarosel.forEach((card) => {
+	card.addEventListener('mouseover', (e) => {
+		e.preventDefault();
+		card.setAttribute('id', 'divSingleCarosel');
+	});
 });

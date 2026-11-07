@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-main,body{
+main,
+body {
     margin: 0;
     padding: 0;
 }
@@ -13,12 +14,13 @@ body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     background-color: #fafafa;
     color: #1a1a1a;
-    
+
 }
-main{
- width: 100%;
- max-width: 992px;
- margin: 0 auto;
+
+main {
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
 }
 
 .darkMode {
@@ -29,19 +31,21 @@ main{
 .darkModeIcon {
     color: f0f0f0;
 }
+
 /* provato a metterlo ovunque funziona solo qui */
 section {
-    scroll-margin-top: 80px; 
+    scroll-margin-top: 80px;
 }
 
-.darkModeCard{
+.darkModeCard {
     background-color: #1f1f1f;
 }
+
 .titleDark {
-    color:  hsl(150, 60%, 30%);
+    color: hsl(150, 60%, 30%);
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -49,8 +53,9 @@ a{
 .container {
     width: 80%;
     margin: 0 auto;
-    
+
 }
+
 button {
     border: none;
     cursor: pointer;
@@ -68,21 +73,31 @@ header {
 
 
 @keyframes scrolling {
-    0% {background-color: inherit;}
-    
-    25% {background-color: hsl(150, 44%, 82%);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);}
-    
-    50% {background-color: hsl(150, 60%, 75%); 
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);}
-    
-    75% {background-color:  hsl(150, 43%, 44%);}
-    
-    100% {background-color:  hsl(150, 60%, 30%);
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);}
+    0% {
+        background-color: inherit;
+    }
+
+    25% {
+        background-color: hsl(150, 44%, 82%);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    }
+
+    50% {
+        background-color: hsl(150, 60%, 75%);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+    }
+
+    75% {
+        background-color: hsl(150, 43%, 44%);
+    }
+
+    100% {
+        background-color: hsl(150, 60%, 30%);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
 }
 
- 
+
 
 .topBar {
     display: flex;
@@ -91,29 +106,30 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
-width: 100vw;
+    width: 100vw;
 
-        ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 25px;
-            padding: 0;
-            button {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                border: 1px solid #eee;
-                background-color: inherit;
-            }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 0;
 
-            i {
-                font-size: 1.5em;
-            }
+        button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+            background-color: inherit;
+        }
+
+        i {
+            font-size: 1.5em;
         }
     }
+}
 
 /* Container Preventivo */
 .containerPreventivo {
@@ -124,32 +140,33 @@ width: 100vw;
     background-color: hsl(150, 60%, 30%);
     color: #f0f0f0;
     height: 400px;
-text-align: center;
-        button {
-            font-weight: 600;
-            color: hsl(150, 60%, 30%);
-            padding: 10px 25px;
-            border-radius: 25px;
-        }
+    text-align: center;
+
+    button {
+        font-weight: 600;
+        color: hsl(150, 60%, 30%);
+        padding: 10px 25px;
+        border-radius: 25px;
+    }
 }
 
 .avatar {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #5385b6 ;
-    }
+    background-color: #5385b6;
+}
 
-  .jobs {
+.jobs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  #containerJobs {
+#containerJobs {
     width: 100%;
-  }
+}
 
 .containerJobs {
     display: flex;
@@ -157,9 +174,9 @@ text-align: center;
     align-items: center;
     justify-content: center;
     width: 100%;
-    
-    
-  
+
+
+
 }
 
 
@@ -168,24 +185,25 @@ text-align: center;
     justify-content: center;
     align-content: space-between;
     padding: 10px;
-    box-shadow: 1px 1px 10px  hsla(0 , 0%, 0%, 0.2 );
+    box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.2);
     border-radius: 8px;
     width: 100%;
     margin-bottom: 15px;
-        img{
-            width: 100%;
-            height: 100%;
-        }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .cardJobs:hover {
     transform: translateY(-5px);
-    box-shadow:  1px 1px 8px  hsla(0 , 0%, 0%, 0.4 );
+    box-shadow: 1px 1px 8px hsla(0, 0%, 0%, 0.4);
 }
 
 .divImg {
     width: 60%;
-    }
+}
 
 .carInterna {
     display: flex;
@@ -197,60 +215,64 @@ text-align: center;
     width: 30%;
 }
 
-.carInterna > div:first-child{
+.carInterna>div:first-child {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
     width: 100%;
-    border-bottom: 1px solid hsla(0 , 0%, 0%, 0.2 );
-    height: 15% ;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+    height: 15%;
 }
-    
- 
 
 
-.carInterna > div:nth-child(2) {
+
+
+.carInterna>div:nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: start;
-    border-bottom: 1px solid hsla(0 , 0%, 0%, 0.2 );
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
     width: 100%;
-     height: 40%;
+    height: 40%;
 }
 
-.carInterna > div:nth-child(3) {
+.carInterna>div:nth-child(3) {
     display: flex;
     flex-direction: column;
-width: 100%;
-position: relative;
-            div{
-                align-self: start;
-                .fa-bookmark {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
-            }
+    width: 100%;
+    position: relative;
 
-            span {
-                align-self: start;
-            }
-            
-    border-bottom: 1px solid hsla(0 , 0%, 0%, 0.2 );
-} 
+    div {
+        align-self: start;
+
+        .fa-bookmark {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    span {
+        align-self: start;
+    }
+
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+}
 
 
-.carInterna > div:nth-child(4) {
+.carInterna>div:nth-child(4) {
     display: flex;
     align-items: center;
     justify-content: start;
-width: 100%;
-position: relative;
-    .fa-ellipsis{
-        margin-left: auto;   
-     }
-border-bottom: 1px solid hsla(0 , 0%, 0%, 0.2 );
+    width: 100%;
+    position: relative;
+
+    .fa-ellipsis {
+        margin-left: auto;
+    }
+
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
 }
 
 
@@ -260,24 +282,26 @@ footer {
     align-items: center;
     text-align: center;
     background-color: #121212;
-color: #f0f0f0;
+    color: #f0f0f0;
+
     h2 {
-        color:  hsl(150, 60%, 30%);
+        color: hsl(150, 60%, 30%);
     }
 
-    div:nth-child(2){
+    div:nth-child(2) {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
-    div:nth-child(2)  i{
+
+    div:nth-child(2) i {
         height: 25px;
         width: 25px;
         font-size: 0.9em;
         color: black;
         padding: 4px;
-        background-color:rgb(190, 189, 187);
+        background-color: rgb(190, 189, 187);
         border-radius: 50%;
     }
 }
@@ -290,29 +314,32 @@ color: #f0f0f0;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    
-        .cardServices{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-        box-shadow: 1px 1px 10px  hsla(0 , 0%, 0%, 0.2 );
+
+
+    .cardServices {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.2);
         border-radius: 8px;
         padding: 20px 10px;
         margin-bottom: 15px;
-            i{color: hsl(150, 60%, 30%);}
-     }
 
-     .cardServices:hover{
+        i {
+            color: hsl(150, 60%, 30%);
+        }
+    }
+
+    .cardServices:hover {
         transform: translateY(-5px);
-    box-shadow:  1px 1px 8px  hsla(0 , 0%, 0%, 0.4 );
-     }
-     
-      
-     .topBar i{
+        box-shadow: 1px 1px 8px hsla(0, 0%, 0%, 0.4);
+    }
+
+
+    .topBar i {
         font-size: 1.5em;
         color: hsl(150, 60%, 30%);
-     }
+    }
 
 
 }
@@ -328,23 +355,23 @@ color: #f0f0f0;
     justify-content: center;
     align-items: center;
 
-     .cardTeam{
+    .cardTeam {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        box-shadow: 1px 1px 10px  hsla(0 , 0%, 0%, 0.2 );
+        box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.2);
         border-radius: 8px;
         padding: 20px 28px;
         margin-bottom: 15px;
-        
-     }
 
-     .cardTeam:hover{
+    }
+
+    .cardTeam:hover {
         transform: translateY(-5px);
-    box-shadow:  1px 1px 8px  hsla(0 , 0%, 0%, 0.4 );
-     }
+        box-shadow: 1px 1px 8px hsla(0, 0%, 0%, 0.4);
+    }
 }
 
 .nameTeam {
@@ -353,7 +380,7 @@ color: #f0f0f0;
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color:  hsl(150, 60%, 30%);
+    background-color: hsl(150, 60%, 30%);
     border-radius: 50%;
 }
 
@@ -384,25 +411,25 @@ color: #f0f0f0;
     width: 70%;
     max-width: 480px;
 
-      p{
+    p {
         font-size: 0.7em;
-     }
-      
-        .marginLabel {
-            display: flex;
-            flex-direction: column;  
-            margin-bottom: 15px;  
-        }
+    }
 
-        div:nth-child(5){
-            font-size: 0.7em;
-            margin-top: 10px;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-        }
+    .marginLabel {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
 
-        #btnCloseModal {
+    div:nth-child(5) {
+        font-size: 0.7em;
+        margin-top: 10px;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #btnCloseModal {
         position: absolute;
         top: 0;
         right: 0;
@@ -411,108 +438,243 @@ color: #f0f0f0;
         margin-top: 8px;
         margin-right: 3px;
         cursor: pointer;
-        }
-
-        .btnInvia {
-            padding: 10px 40px;
-            border-radius: 25px;
-            background-color:hsl(150, 60%, 30%);
-            color: #f0f0f0;
-            margin-top: 10px;
-        }
     }
+
+    .btnInvia {
+        padding: 10px 40px;
+        border-radius: 25px;
+        background-color: hsl(150, 60%, 30%);
+        color: #f0f0f0;
+        margin-top: 10px;
+    }
+}
+
+
+#sectionCol {
+    margin: 0 auto;
+    text-align: center;
+    height: 270px;
+}
+
+
+.cardPadreCarosel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 250px;
+
+
+
+.cardCarosel:nth-of-type(1) {
+    animation-delay: 0s;
+}
+.cardCarosel:nth-of-type(2) {
+    animation-delay: -5s;
+}
+.cardCarosel:nth-of-type(3) {
+    animation-delay: -10s;
+}
+.cardCarosel:nth-of-type(4) {
+    animation-delay: -15s;
+}
+    
+
+    .cardCarosel { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        font-size: 0.5em;
+        height: 170px;
+        padding: 5px;
+        box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.2);
+        margin-bottom: 20px;
+        border-radius: 8px;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        animation: animationCarousel 20s linear infinite;
+
+    }
+}
+
+#divSingleCarosel:hover {
+    transform: translateY(-3px);
+    box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.2);
+}
+
+.cardPadreCarosel:hover div {
+    animation-delay: 0;
+    animation-play-state: paused;
+}
+
+@keyframes animationCarousel {
+    0% {
+        opacity: 0;
+        right: 0;
+    }
+
+    10% {
+        opacity: 0.5;
+        right: 10%;
+    }
+
+    20% {
+        opacity: 0.6;
+        right: 20%;
+    }
+
+    30% {
+        opacity: 0.7;
+        right: 30%;
+    }
+
+    40% {
+        opacity: 0.9;
+        right: 40%;
+    }
+
+    50% {
+        opacity: 1;
+        right: 50%;
+    }
+
+    60% {
+        opacity: 0.9;
+        right: 60%;
+    }
+
+    70% {
+        opacity: 0.7;
+        right: 70%;
+    }
+
+    80% {
+        opacity: 0.7;
+        right: 80%;
+    }
+
+    90% {
+        opacity: 0.3;
+        right: 90%;
+    }
+
+    100% {
+        opacity: 0;
+        right: 100%;
+    }
+}
 
 
 @media screen and (min-width: 768px) {
-     .containerPadreJobs{
+    .containerPadreJobs {
         display: flex;
-         flex-direction: row;
+        flex-direction: row;
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
-        column-gap: 30px;
-        .containerJobs{
-                width: 45%;
-               }
-            }
+        column-gap: 34px;
 
-        
-
-       
-
-        .sectionService {
-            display: flex;
-            flex-direction: row; 
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            width: 100%;
-
-            .cardServices {
-                width: 48%; 
-                
-            }
+        .containerJobs {
+            width: 45%;
         }
-    
+
+
+    }
+
+
+
+
+
+    .sectionService {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+
+        .cardServices {
+            width: 48%;
+
+        }
+    }
+
 
     .sectionService div:nth-child(3) {
         flex: 1;
     }
-        
-.pageTeam {
-            display: flex;
-         flex-direction: row;
+
+    .pageTeam {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
         column-gap: 30px;
-        }
-            .cardTeam {
-                width: 45%;
-            }
-            
-             .pageTeam div:last-child{
-                flex: 1;
-            }
-        
-            .topBar {
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-around;
-            }
+    }
 
-            footer{
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-around;
+    .cardTeam {
+        width: 45%;
+    }
 
-                div:nth-child(1){
-                    font-size: 0.6em;
-                    text-align: start;
-                }
-            }
-           
+    .pageTeam div:last-child {
+        flex: 1;
+    }
+
+    .topBar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        div:nth-child(1) {
+            font-size: 0.6em;
+            text-align: start;
         }
-        
-    
+    }
+
+}
+
+
 @media screen and (min-width: 992px) {
-    
-    
-    .containerPadreJobs .containerJobs{
+
+    .cardJobs {
+        height: 180px;
+        width: 262px;
+    }
+
+    .carInterna {
+        height: 120px;
+
+
+    }
+
+
+    .avatar {
+        height: 16px;
+        width: 16px;
+    }
+
+    .containerPadreJobs .containerJobs {
         width: 30%;
     }
-    
+
     .cardServices {
         width: 40%;
         flex: 1;
     }
 
-    .pageTeam .cardTeam{
+    .pageTeam .cardTeam {
         width: 40%;
         flex: 1;
     }
 
-     
-    
-    
 }
-
